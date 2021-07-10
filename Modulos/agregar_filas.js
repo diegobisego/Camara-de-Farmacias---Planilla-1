@@ -29,6 +29,7 @@ add = () => {
                     break;
                 case 1:
                     columna.setAttribute("colspan","2");
+                    cargar_os(columna);
                     break;
                 case 2:
                     break;
