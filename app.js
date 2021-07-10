@@ -23,5 +23,58 @@ cargar_os = (param) => {
         select.appendChild(option);
         option.innerHTML = os_1[i];        
     }
-}            
+}   
 
+
+//CARGAR PLANES
+var plan_ASOCIART = "AMB.";
+var plan_BERKLEY = "AMB.";
+var plan_ABOG = ["AMB.","PMI. 100%","ESPECIALES"];
+var plan_MEDICA_RIO_IV = ["AMB. 40%","AMB 50%","PMI","CRÓNICOS (40,50%)"];
+var plan_DASUTEN = ["AMB. MIXTO","ANTICONCEP. 100%","ACCID. DE TRABAJO","PMI 100%"];
+var plan_MEDICAMENTO_PRIMER_NIVEL = "AMB.";
+var plan_EXPERIENCIA_ART = "AMB.";
+var plan_EXPERTA_ART = "AMB.";
+var plan_GALENO_ART = "AMB.";
+var plan_LA_SEGUNDA_ART = "AMB.";
+var plan_LIBERTY_ART = "AMB.";
+var plan_LIDERAR_ART = "AMB.";
+var plan_PLUS_ART = "AMB.";
+var plan_OMINT_ART = "AMB.";
+var plan_JERARQUICOS_SALUD = "SUMA DE PLANES";
+var plan_OSAPM = ["AMB.","CRON.","PMI","DISCAPACIDAD"];
+var plan_OSDEPYM = ["40%","50%","M. F - 70% -100%","PMI"];
+var plan_OSBA = "SUMA DE PLANES";
+var plan_OSDIPP = "SUMA DE PLANES";
+var plan_OS_PERS_DE_FCIAS = ["AMB.","PMI"];
+var plan_OS_S_FEDERACIÓN_DE_LA_CARNE = "AMB 50%";
+var plan_ORG_ROCA = "AMB.";
+var plan_OSIAD_ACEITEROS = ["AMB 40%","CRON 70%","ANTICONCEPTIVOS","PMI 100%"];
+var plan_OSPIC_CAUCHO = "AMB.";
+var plan_OSPIT_TEXTILES = "TOTAL";
+var plan_OSPIP_PLÁSTICOS = "SUMA DE PLANES";
+var plan_OSMATA = "SUMA DE PLANES";
+var plan_OSFATLYF = ["BASICO 40%","ESP.-ADHER 50%","PMI ONLINE","ANTICONCEPTIVOS","CRON 70-100%","VARIOS-MIXTOS","AUTORIZACIONES"];
+var plan_OSFE = ["AMB. 40%","PMI 100%","AUT. ESP."];
+var plan_PODER_JUDICIAL = "SUMA DE PLANES";
+var plan_POLICIA_FEDERAL_MES_ACTUAL = ["ACTIVOS 50%","ACTIVOS 100%","PASIVOS 50%","PASIVOS 100%","PMI"];
+var plan_POLICÍA_FEDERAL_MESES_ANTERIORES = ["ACTIVOS 50%","ACTIVOS 100%","PASIVOS 50%","PASIVOS 100%","PMI"];
+var plan_POLICIA_FEDERAL_TRAT_ESPECIALES = "TRAT. ESPECIALES";
+var plan_PROVINCIA_ART  = "AMB";
+var plan_RECETARIO_SOLIDARIO = "VALIDADAS";
+var plan_SIPSSA_PREPAGO = ["AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_OSPOCE = ["AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_OSPOCE_APEX = ["AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_OSCEP = ["AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_ASSP = ["AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_OSIM = ["AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_APM = ["AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_TA = ["AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_PLAN_37_EMPLEADOS = ["AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SANCOR_SEGUROS_INTEGROS  = "AMB";
+var plan_SERVIRED = ["AMB. 40%/50%","CRON. 70%/100%","PMI "];
+var plan_SWISS_MEDICAL_VALIDADAS = "SUMA DE PLANES";
+var plan_SWISS_MEDICAL_NO_VALIDADAS = ["AMB 40%","PMI 100%","AUT 100%"];
+var plan_SWISS_MEDICAL_ART = "AMB";
+var plan_UNIÓN_PERSONAL = ["SUMA DE PLANES","20%"];
+var plan_VICTORIA_ART = "AMB";

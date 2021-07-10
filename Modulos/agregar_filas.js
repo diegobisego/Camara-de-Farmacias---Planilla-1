@@ -22,22 +22,31 @@ add = () => {
             //agrego por cada columna lo que corresponde
             switch (i) {
                 case 0:    
-                    let input = document.createElement('input');
-                    input.setAttribute('class','form-control');
-                    input.setAttribute('value',`ID: ${id}`);
-                    columna.appendChild(input);                    
+                    let inpu0 = document.createElement('input');
+                    inpu0.setAttribute('class','form-control');
+                    columna.appendChild(inpu0);                    
                     break;
                 case 1:
                     columna.setAttribute("colspan","2");
                     cargar_os(columna);
                     break;
                 case 2:
+                    
                     break;
                 case 3:
+                    let input3 = document.createElement('input');
+                    input3.setAttribute('class','form-control');
+                    columna.appendChild(input3);
                     break;
                 case 4:
+                    let input4 = document.createElement('input');
+                    input4.setAttribute('class','form-control');
+                    columna.appendChild(input4);
                     break;
                 case 5:
+                    let input5 = document.createElement('input');
+                    input5.setAttribute('class','form-control');
+                    columna.appendChild(input5);
                     break;              
                 case 6:
                     btn_borrar = document.createElement("button");
