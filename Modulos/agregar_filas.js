@@ -5,7 +5,7 @@ var boton = document.getElementById("add");
 var bandera = 0;
 
 // ADD LINEA
-var add = () => {
+add = () => {
     
     boton.addEventListener('click', () => {
         
@@ -56,7 +56,8 @@ var add = () => {
                     break;              
                 case 6:
                     let btn_borrar = document.createElement("button");
-                    btn_borrar.setAttribute("class","btn btn-danger");
+                    btn_borrar.setAttribute("class","btn btn-danger remove");
+                    btn_borrar.setAttribute('onClick', `remove(${id})`);
                     btn_borrar.setAttribute("id","id_fila" + id);
                     columna.appendChild(btn_borrar).innerHTML = "Borrar";
                     columna.setAttribute("style","background-color: transparent; border:none;");

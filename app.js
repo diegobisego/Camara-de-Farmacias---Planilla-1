@@ -93,8 +93,7 @@ cargar_os = (param) => {
             let pos_lista_plan = document.getElementById("id_planes_lista" + bandera);
             let option = document.createElement("option");
             pos_lista_plan.appendChild(option);
-            option.innerText = param1[i]; 
-            console.log(pos_lista_plan.id);                       
+            option.innerText = param1[i];                        
         }
         boton.disabled = false;
     }
@@ -686,4 +685,10 @@ elimina_nodos = (param1,param2) => {
     let padre = document.getElementById(param2);
     padre.removeChild(hijos);
 
+}
+
+
+remove = (id) => {
+    document.getElementById(id).remove()
+    boton.disabled = false;
 }
