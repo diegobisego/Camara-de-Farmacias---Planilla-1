@@ -1,4 +1,4 @@
-fecha_actual = () => {
+var fecha_actual = () => {
     //CREO LAS VARIABLES PARA LA FECHA
     const fecha = new Date();
     const dia = fecha.getDate();
@@ -10,7 +10,7 @@ fecha_actual = () => {
     let dia_actual = dia_semana[dia_nombre];
 
 //FUNCION QUE CREA EL DIV PARA QUE CARGUE LA FECHA EN FORMA DINAMICA
-createDiv = (param) => {
+var createDiv = (param) => {
         let div = document.createElement("div");
         let text = document.createTextNode(dia_actual.toUpperCase() + " " + dia + " DE " +  mes_actual.toUpperCase());
         param.appendChild(div);
