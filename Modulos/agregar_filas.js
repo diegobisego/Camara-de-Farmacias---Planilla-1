@@ -37,7 +37,6 @@ add = () => {
                     sel.setAttribute("class","form-select");
                     sel.setAttribute("id","id_planes_lista"+bandera);
                     sel.disabled = true;
-                    //carga_planes_os();
                     break;
                 case 3:
                     let input3 = document.createElement('input');
@@ -57,7 +56,8 @@ add = () => {
                 case 6:
                     let btn_borrar = document.createElement("button");
                     btn_borrar.setAttribute("class","btn btn-danger remove");
-                    btn_borrar.setAttribute('onClick', `remove(${id})`);
+                    btn_borrar.setAttribute('onClick', "deleteRow(this)");
+                    btn_borrar.setAttribute('value', "Delete");
                     btn_borrar.setAttribute("id","id_fila" + id);
                     columna.appendChild(btn_borrar).innerHTML = "Borrar";
                     columna.setAttribute("style","background-color: transparent; border:none;");

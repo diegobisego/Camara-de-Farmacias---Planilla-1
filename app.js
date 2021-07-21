@@ -688,7 +688,7 @@ elimina_nodos = (param1,param2) => {
 }
 
 
-remove = (id) => {
-    document.getElementById(id).remove()
-    boton.disabled = false;
+deleteRow = (btn) => {
+    var row = btn.parentNode.parentNode;
+    row.parentNode.removeChild(row);
 }
