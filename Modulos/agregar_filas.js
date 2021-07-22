@@ -23,34 +23,33 @@ add = () => {
             switch (i) {
                 case 0:    
                     let inpu0 = document.createElement('input');
-                    inpu0.setAttribute('class','form-control ajuste');
-                    columna.appendChild(inpu0);                    
+                    inpu0.setAttribute('class','sizeF1');
+                    columna.appendChild(inpu0);                  
                     break;
                 case 1:
                     columna.setAttribute("colspan","2");
-                    columna.setAttribute("class","ajuste")
                     cargar_os(columna);
                     break;
                 case 2:
                     let sel = document.createElement("select");
                     columna.appendChild(sel);
-                    sel.setAttribute("class","form-select");
+                    sel.setAttribute("class","sizeF2");
                     sel.setAttribute("id","id_planes_lista"+bandera);
                     sel.disabled = true;
                     break;
                 case 3:
                     let input3 = document.createElement('input');
-                    input3.setAttribute('class','form-control');
+                    input3.setAttribute('class','sizeF1');
                     columna.appendChild(input3);
                     break;
                 case 4:
                     let input4 = document.createElement('input');
-                    input4.setAttribute('class','form-control');
+                    input4.setAttribute('class','sizeF1');
                     columna.appendChild(input4);
                     break;
                 case 5:
                     let input5 = document.createElement('input');
-                    input5.setAttribute('class','form-control');
+                    input5.setAttribute('class','sizeF1');
                     columna.appendChild(input5);
                     break;              
                 case 6:
@@ -72,36 +71,5 @@ add = () => {
     )
 }
 
-/*
-guardar = () => {
-    var btnsave = document.getElementById("save");
-    btnsave.addEventListener('click', () => {
-        const bodyPage = document.body;
-        html2pdf()
-    .set({
-        margin: 1,
-        filename: 'documento.pdf',
-        image: {
-            type: 'jpeg',
-            quality: 0.98
-        },
-        html2canvas: {
-            scale: 9, // A mayor escala, mejores gráficos, pero más peso
-            letterRendering: true,
-        },
-        jsPDF: {
-            unit: "in",
-            format: "a4",
-            orientation: 'landscape' // landscape o portrait
-        }
-    })
-    .from(bodyPage)
-    .save()
-    .catch(err => console.log(err));
-    })
-}
-
-
 add();
-guardar();
-*/
+

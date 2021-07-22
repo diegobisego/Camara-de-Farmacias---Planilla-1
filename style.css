@@ -4,8 +4,12 @@
     margin: 0;
 }
 
+body {
+    font-size: 10px;
+}
+
 table {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 30px;
     margin-left: 5%;
@@ -103,3 +107,20 @@ td > input {
     
 }
 
+.sizeF1 {
+    width: 100px;
+    height: 36px;
+    border-radius: 8%;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    font-size: 11px;
+}
+
+.sizeF2 {
+    width: 230px;
+    height: 36px;
+    border-radius: 8%;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    font-size: 11px;
+}

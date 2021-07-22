@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,9 +44,9 @@
                 <td class="tg-ur59" colspan="7"></td>
             </tr>
             <tr>
-                <td class="tg-hmp3" rowspan="4" style="vertical-align: middle;">280</td>
+                <td class="tg-hmp3" rowspan="4" style="vertical-align: middle; width: 120px;">280</td>
                 <td class="tg-hmp3" rowspan="4" style="vertical-align: middle; width: 100px;">PAMI <input type="text"
-                        placeholder="QUINCENA Y MES" style="width: 200px;" class="form-control"></td>
+                        placeholder="QUINCENA Y MES" class="form-control"></td>
                 <td class="tg-hmp3" colspan="3" style="text-align: center;">PVP PAMI: <input type="text"
                         style="width: 300px;" class="form-control"></td>
                 <td class="tg-hmp3" colspan="2" style="text-align: center;">Recetas: <input type="text" class="form-control"></td>
@@ -137,12 +137,12 @@
                 <td class="tg-hmp3">Nº REC</td>
             </tr>
         </tbody>
-        <tfoot id="tfoot">
-        </tfoot>
+        <tbody id="tfoot">
+        </tbody>
     </table>
     <div class="button">
         <button type="submit" class="btn btn-primary" id="add">AGREGAR</button>
-        <button type="submit" class="btn btn-primary" id="save">IMPRIMIR</button>
+        <button type="button" name="imprimir" value="Imprimir" onclick="window.print();" text="IMPRIMIR"  class="btn btn-primary">IMPRIMIR</button>
     </div>
 </body>
 <script src="./app.js"></script>
