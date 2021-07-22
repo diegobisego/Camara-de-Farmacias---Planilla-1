@@ -23,11 +23,12 @@ add = () => {
             switch (i) {
                 case 0:    
                     let inpu0 = document.createElement('input');
-                    inpu0.setAttribute('class','form-control');
+                    inpu0.setAttribute('class','form-control ajuste');
                     columna.appendChild(inpu0);                    
                     break;
                 case 1:
                     columna.setAttribute("colspan","2");
+                    columna.setAttribute("class","ajuste")
                     cargar_os(columna);
                     break;
                 case 2:
@@ -71,4 +72,36 @@ add = () => {
     )
 }
 
+/*
+guardar = () => {
+    var btnsave = document.getElementById("save");
+    btnsave.addEventListener('click', () => {
+        const bodyPage = document.body;
+        html2pdf()
+    .set({
+        margin: 1,
+        filename: 'documento.pdf',
+        image: {
+            type: 'jpeg',
+            quality: 0.98
+        },
+        html2canvas: {
+            scale: 9, // A mayor escala, mejores gráficos, pero más peso
+            letterRendering: true,
+        },
+        jsPDF: {
+            unit: "in",
+            format: "a4",
+            orientation: 'landscape' // landscape o portrait
+        }
+    })
+    .from(bodyPage)
+    .save()
+    .catch(err => console.log(err));
+    })
+}
+
+
 add();
+guardar();
+*/
