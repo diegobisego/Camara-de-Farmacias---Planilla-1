@@ -691,4 +691,5 @@ elimina_nodos = (param1,param2) => {
 deleteRow = (btn) => {
     var row = btn.parentNode.parentNode;
     row.parentNode.removeChild(row);
+    boton.disabled = false;
 }

@@ -13,8 +13,7 @@ add = () => {
         let fila = document.createElement('tr');
         table.appendChild(fila);
         fila.setAttribute('id', id);
-        bandera +=1;
-        
+        bandera +=1;        
 
         for (let i = 0; i < 7; i++) { //7 columnas
             var columna = document.createElement('td');
@@ -73,4 +72,3 @@ add = () => {
 }
 
 add();
-//carga_planes_os();
