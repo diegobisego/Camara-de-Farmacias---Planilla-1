@@ -53,6 +53,7 @@ add = () => {
                     columna.appendChild(input5);
                     break;              
                 case 6:
+                    columna.setAttribute('id','btnborrarhidden');
                     let btn_borrar = document.createElement("button");
                     btn_borrar.setAttribute("class","btn btn-danger remove");
                     btn_borrar.setAttribute('onClick', "deleteRow(this)");
@@ -72,4 +73,5 @@ add = () => {
 }
 
 add();
+
 
