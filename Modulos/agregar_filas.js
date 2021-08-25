@@ -1,5 +1,3 @@
-
-
 // Variables Globales
 var id = 0;
 var table = document.getElementById("tfoot");

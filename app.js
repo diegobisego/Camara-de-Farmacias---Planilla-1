@@ -14,11 +14,6 @@ var os_lista = ["SELECCIONE OS","ASOCIART ART","BERKLEY ART","CAJA DE ABOG","COO
             "SIPSSA PLAN 37 EMPLEADOS","SANCOR SEGUROS INTEGROS","SERVIRED","SWISS MEDICAL VALIDADAS",
             "SWISS MEDICAL NO VALIDADAS","SWISS MEDICAL ART","UNIÓN PERSONAL","VICTORIA ART"];
 
-//CARGA DE CODIGOS
-var cod_planes = [115,22,18,218,518,21,8,2900,153,137,125,2550,126,5800,122,8702,301,8501,5408,307,2,71,
-            898,76,69,420,758,6800,300,2673,2000,8500,81,481,781,208,100];
-
-
 //CARGAR PLANES
 var plan_ASOCIART = ["SELECCIONE PLAN","AMB."];
 var plan_BERKLEY = ["SELECCIONE PLAN","AMB."];
@@ -92,6 +87,7 @@ cargar_os = (param) => {
         contador++        
     }
     contador = 0;
+
 //FUNCION CARGA PLANES
 carga_plan_dinamico = (param1) => {
     for (i in param1) {
@@ -113,8 +109,7 @@ carga_planes_os = () => {
         switch (value_id_select) {
             case "1":                       
                     carga_plan_dinamico(plan_ASOCIART);
-                    pos_lista_plan.disabled = false; 
-                    return value_id_select;     
+                    pos_lista_plan.disabled = false;     
             case "2":                       
                 carga_plan_dinamico(plan_BERKLEY);
                 pos_lista_plan.disabled = false;                   
