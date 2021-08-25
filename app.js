@@ -23,7 +23,7 @@ var cod_planes = [115,22,18,218,518,21,8,2900,153,137,125,2550,126,5800,122,8702
 var plan_ASOCIART = ["SELECCIONE PLAN","AMB."];
 var plan_BERKLEY = ["SELECCIONE PLAN","AMB."];
 var plan_ABOG = ["SELECCIONE PLAN","AMB.","PMI. 100%","ESPECIALES"];
-var plan_MEDICA_RIO_IV = ["SELECCIONE PLAN","AMB. 40%","AMB 50%","PMI","CRÓNICOS (40,50%)"];
+var plan_MEDICA_RIO_IV = ["SELECCIONE PLAN","AMB 40%","AMB 50%","PMI","CRÓNICOS (40,50%)"];
 var plan_DASUTEN = ["SELECCIONE PLAN","AMB. MIXTO","ANTICONCEP. 100%","ACCID. DE TRABAJO","PMI 100%"];
 var plan_MEDICAMENTO_PRIMER_NIVEL = ["SELECCIONE PLAN","AMB."];
 var plan_EXPERIENCIA_ART = ["SELECCIONE PLAN","AMB."];
@@ -354,15 +354,11 @@ carga_cod_planes = () => {
 
         switch (id_select) {
             case "1":
-                if (selected == "AMB.") {
-                    codigo.value = "115"
-                    codigo.disabled = true;
-                }
+                codigo.value = "115"
+                codigo.disabled = true;
                 break;
             case "2":
-                if (selected == "AMB.") {
-                    codigo.value = "22"
-                }
+                codigo.value = "22"
                 codigo.disabled = true;
                 break;
             case "3":
@@ -379,7 +375,198 @@ carga_cod_planes = () => {
                 }
                 codigo.disabled = true;
                 break;
-            
+            case "4":
+                codigo.value = "21"
+                codigo.disabled = true;
+                break;
+            case "5":
+                codigo.value = "8"
+                codigo.disabled = true;
+                break;
+            case "6":
+                codigo.value = "2900"
+                codigo.disabled = true;
+                break;
+            case "7":
+                codigo.value = "153"
+                codigo.disabled = true;
+                break;
+            case "8":
+                codigo.value = "137"
+                codigo.disabled = true;
+                break;   
+            case "9":
+                codigo.value = "125"
+                codigo.disabled = true;
+                break;  
+            case "10":
+                codigo.value = "2550"
+                codigo.disabled = true;
+                break;
+            case "11":
+                codigo.value = "126"
+                codigo.disabled = true;
+                break;
+            case "12":
+                codigo.value = "5800"
+                codigo.disabled = true;
+                break;
+            case "13":
+                codigo.value = "122"
+                codigo.disabled = true;
+                break;
+            case "14":
+                codigo.value = "8702"
+                codigo.disabled = true;
+                break;  
+            case "15":
+                codigo.value = "301"
+                codigo.disabled = true;
+                break; 
+            case "16":
+                codigo.value = "8501"
+                codigo.disabled = true;
+                break; 
+            case "17":
+                codigo.value = "5408"
+                codigo.disabled = true;
+                break; 
+            case "18":
+                codigo.value = "307"
+                codigo.disabled = true;
+                break; 
+            case "19":
+                codigo.value = "2"
+                codigo.disabled = true;
+                break; 
+            case "20":
+                codigo.value = "71"
+                codigo.disabled = true;
+                break; 
+            case "21":
+                codigo.value = "898"
+                codigo.disabled = true;
+                break; 
+            case "22":
+                codigo.value = "76"
+                codigo.disabled = true;
+                break; 
+            case "23":
+                codigo.value = "69"
+                codigo.disabled = true;
+                break; 
+            case "24":
+                codigo.value = "420"
+                codigo.disabled = true;
+                break; 
+            case "25":
+                codigo.value = "758"
+                codigo.disabled = true;
+                break; 
+            case "26":
+                codigo.value = "6800"
+                codigo.disabled = true;
+                break; 
+            case "27":
+                codigo.value = "300"
+                codigo.disabled = true;
+                break;     
+            case "28":
+                codigo.value = "2673"
+                codigo.disabled = true;
+                break; 
+            case "29":
+                codigo.value = "2000"
+                codigo.disabled = true;
+                break; 
+            case "30":
+                codigo.value = "8500"
+                codigo.disabled = true;
+                break; 
+            case "31":
+                codigo.value = "81"
+                codigo.disabled = true;
+                break;
+            case "32":
+                codigo.value = "481"
+                codigo.disabled = true;
+                break; 
+            case "33":
+                codigo.value = "781"
+                codigo.disabled = true;
+                break; 
+            case "34":
+                codigo.value = "208"
+                codigo.disabled = true;
+                break; 
+            case "35":
+                codigo.value = "1000"
+                codigo.disabled = true;
+                break; 
+            case "36":
+                codigo.value = "7100"
+                codigo.disabled = true;
+                break; 
+            case "37":
+                codigo.value = "7200"
+                codigo.disabled = true;
+                break; 
+            case "38":
+                codigo.value = "7300"
+                codigo.disabled = true;
+                break; 
+            case "39":
+                codigo.value = "7400"
+                codigo.disabled = true;
+                break; 
+            case "40":
+                codigo.value = "7500"
+                codigo.disabled = true;
+                break; 
+            case "41":
+                codigo.value = "7600"
+                codigo.disabled = true;
+                break; 
+            case "42":
+                codigo.value = "7700"
+                codigo.disabled = true;
+                break; 
+            case "43":
+                codigo.value = "7800"
+                codigo.disabled = true;
+                break; 
+            case "44":
+                codigo.value = "8400"
+                codigo.disabled = true;
+                break;      
+            case "45":
+                codigo.value = "5000"
+                codigo.disabled = true;
+                break;  
+            case "46":
+                codigo.value = "720"
+                codigo.disabled = true;
+                break; 
+            case "47":
+                codigo.value = "308"
+                codigo.disabled = true;
+                break;  
+            case "48":
+                codigo.value = "1308"
+                codigo.disabled = true;
+                break;  
+            case "49":
+                codigo.value = "1308"
+                codigo.disabled = true;
+                break;  
+            case "50":
+                codigo.value = "8001"
+                codigo.disabled = true;
+                break;  
+            case "51":
+                codigo.value = "5500"
+                codigo.disabled = true;
+                break;
             default:
                 break;
         }
