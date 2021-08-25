@@ -1,3 +1,5 @@
+
+
 // Variables Globales
 var id = 0;
 var table = document.getElementById("tfoot");
@@ -24,7 +26,8 @@ add = () => {
                 case 0:    
                     let inpu0 = document.createElement('input');
                     inpu0.setAttribute('class','sizeF1');
-                    columna.appendChild(inpu0);                  
+                    inpu0.setAttribute('id','codigo_plan' + bandera);
+                    columna.appendChild(inpu0);
                     break;
                 case 1:
                     columna.setAttribute("colspan","2");
@@ -35,6 +38,7 @@ add = () => {
                     columna.appendChild(sel);
                     sel.setAttribute("class","sizeF2");
                     sel.setAttribute("id","id_planes_lista"+bandera);
+                    sel.setAttribute("OnChange","carga_cod_planes()");
                     sel.disabled = true;
                     break;
                 case 3:

@@ -14,59 +14,64 @@ var os_lista = ["SELECCIONE OS","ASOCIART ART","BERKLEY ART","CAJA DE ABOG","COO
             "SIPSSA PLAN 37 EMPLEADOS","SANCOR SEGUROS INTEGROS","SERVIRED","SWISS MEDICAL VALIDADAS",
             "SWISS MEDICAL NO VALIDADAS","SWISS MEDICAL ART","UNIÓN PERSONAL","VICTORIA ART"];
 
+//CARGA DE CODIGOS
+var cod_planes = [115,22,18,218,518,21,8,2900,153,137,125,2550,126,5800,122,8702,301,8501,5408,307,2,71,
+            898,76,69,420,758,6800,300,2673,2000,8500,81,481,781,208,100];
+
 
 //CARGAR PLANES
-var plan_ASOCIART = ["AMB."];
-var plan_BERKLEY = ["AMB."];
-var plan_ABOG = ["AMB.","PMI. 100%","ESPECIALES"];
-var plan_MEDICA_RIO_IV = ["AMB. 40%","AMB 50%","PMI","CRÓNICOS (40,50%)"];
-var plan_DASUTEN = ["AMB. MIXTO","ANTICONCEP. 100%","ACCID. DE TRABAJO","PMI 100%"];
-var plan_MEDICAMENTO_PRIMER_NIVEL = ["AMB."];
-var plan_EXPERIENCIA_ART = ["AMB."];
-var plan_EXPERTA_ART = ["AMB."];
-var plan_GALENO_ART = ["AMB."];
-var plan_LA_SEGUNDA_ART = ["AMB."];
-var plan_LIBERTY_ART = ["AMB."];
-var plan_LIDERAR_ART = ["AMB."];
-var plan_PLUS_ART = ["AMB."];
-var plan_OMINT_ART = ["AMB."];
-var plan_JERARQUICOS_SALUD = ["SUMA DE PLANES"];
-var plan_OSAPM = ["AMB.","CRON.","PMI","DISCAPACIDAD"];
-var plan_OSDEPYM = ["40%","50%","M. F - 70% -100%","PMI"];
-var plan_OSBA = ["SUMA DE PLANES"];
-var plan_OSDIPP = ["SUMA DE PLANES"];
-var plan_OS_PERS_DE_FCIAS = ["AMB.","PMI"];
-var plan_OS_S_FEDERACIÓN_DE_LA_CARNE = ["AMB 50%"];
-var plan_ORG_ROCA = ["AMB."];
-var plan_OSIAD_ACEITEROS = ["AMB 40%","CRON 70%","ANTICONCEPTIVOS","PMI 100%"];
-var plan_OSPIC_CAUCHO = ["AMB."];
-var plan_OSPIT_TEXTILES =["TOTAL"];
-var plan_OSPIP_PLÁSTICOS = ["SUMA DE PLANES"];
-var plan_OSMATA = ["SUMA DE PLANES"];
-var plan_OSFATLYF = ["BASICO 40%","ESP.-ADHER 50%","PMI ONLINE","ANTICONCEPTIVOS","CRON 70-100%","VARIOS-MIXTOS","AUTORIZACIONES"];
-var plan_OSFE = ["AMB. 40%","PMI 100%","AUT. ESP."];
+var plan_ASOCIART = ["SELECCIONE PLAN","AMB."];
+var plan_BERKLEY = ["SELECCIONE PLAN","AMB."];
+var plan_ABOG = ["SELECCIONE PLAN","AMB.","PMI. 100%","ESPECIALES"];
+var plan_MEDICA_RIO_IV = ["SELECCIONE PLAN","AMB. 40%","AMB 50%","PMI","CRÓNICOS (40,50%)"];
+var plan_DASUTEN = ["SELECCIONE PLAN","AMB. MIXTO","ANTICONCEP. 100%","ACCID. DE TRABAJO","PMI 100%"];
+var plan_MEDICAMENTO_PRIMER_NIVEL = ["SELECCIONE PLAN","AMB."];
+var plan_EXPERIENCIA_ART = ["SELECCIONE PLAN","AMB."];
+var plan_EXPERTA_ART = ["SELECCIONE PLAN","AMB."];
+var plan_GALENO_ART = ["SELECCIONE PLAN","AMB."];
+var plan_LA_SEGUNDA_ART = ["SELECCIONE PLAN","AMB."];
+var plan_LIBERTY_ART = ["SELECCIONE PLAN","AMB."];
+var plan_LIDERAR_ART = ["SELECCIONE PLAN","AMB."];
+var plan_PLUS_ART = ["SELECCIONE PLAN","AMB."];
+var plan_OMINT_ART = ["SELECCIONE PLAN","AMB."];
+var plan_JERARQUICOS_SALUD = ["SELECCIONE PLAN","SUMA DE PLANES"];
+var plan_OSAPM = ["SELECCIONE PLAN","AMB.","CRON.","PMI","DISCAPACIDAD"];
+var plan_OSDEPYM = ["SELECCIONE PLAN","40%","50%","M. F - 70% -100%","PMI"];
+var plan_OSBA = ["SELECCIONE PLAN","SUMA DE PLANES"];
+var plan_OSDIPP = ["SELECCIONE PLAN","SUMA DE PLANES"];
+var plan_OS_PERS_DE_FCIAS = ["SELECCIONE PLAN","AMB.","PMI"];
+var plan_OS_S_FEDERACIÓN_DE_LA_CARNE = ["SELECCIONE PLAN","AMB 50%"];
+var plan_ORG_ROCA = ["SELECCIONE PLAN","AMB."];
+var plan_OSIAD_ACEITEROS = ["SELECCIONE PLAN","AMB 40%","CRON 70%","ANTICONCEPTIVOS","PMI 100%"];
+var plan_OSPIC_CAUCHO = ["SELECCIONE PLAN","AMB."];
+var plan_OSPIT_TEXTILES =["SELECCIONE PLAN","TOTAL"];
+var plan_OSPIP_PLÁSTICOS = ["SELECCIONE PLAN","SUMA DE PLANES"];
+var plan_OSMATA = ["SELECCIONE PLAN","SUMA DE PLANES"];
+var plan_OSFATLYF = ["SELECCIONE PLAN","BASICO 40%","ESP.-ADHER 50%","PMI ONLINE","ANTICONCEPTIVOS","CRON 70-100%","VARIOS-MIXTOS","AUTORIZACIONES"];
+var plan_OSFE = ["SELECCIONE PLAN","AMB. 40%","PMI 100%","AUT. ESP."];
 var plan_PODER_JUDICIAL = ["SUMA DE PLANES"];
-var plan_POLICIA_FEDERAL_MES_ACTUAL = ["ACTIVOS 50%","ACTIVOS 100%","PASIVOS 50%","PASIVOS 100%","PMI"];
-var plan_POLICÍA_FEDERAL_MESES_ANTERIORES = ["ACTIVOS 50%","ACTIVOS 100%","PASIVOS 50%","PASIVOS 100%","PMI"];
-var plan_POLICIA_FEDERAL_TRAT_ESPECIALES = ["TRAT. ESPECIALES"];
-var plan_PROVINCIA_ART  = ["AMB"];
-var plan_RECETARIO_SOLIDARIO = ["VALIDADAS"];
-var plan_SIPSSA_PREPAGO = ["AMB 40%","AMB 50%","AUT. ESP."];
-var plan_SIPSSA_OSPOCE = ["AMB 40%","AMB 50%","AUT. ESP."];
-var plan_SIPSSA_OSPOCE_APEX = ["AMB 40%","AMB 50%","AUT. ESP."];
-var plan_SIPSSA_OSCEP = ["AMB 40%","AMB 50%","AUT. ESP."];
-var plan_SIPSSA_ASSP = ["AMB 40%","AMB 50%","AUT. ESP."];
-var plan_SIPSSA_OSIM = ["AMB 40%","AMB 50%","AUT. ESP."];
-var plan_SIPSSA_APM = ["AMB 40%","AMB 50%","AUT. ESP."];
-var plan_SIPSSA_TA = ["AMB 40%","AMB 50%","AUT. ESP."];
-var plan_SIPSSA_PLAN_37_EMPLEADOS = ["AMB 40%","AMB 50%","AUT. ESP."];
-var plan_SANCOR_SEGUROS_INTEGROS  = ["AMB"];
-var plan_SERVIRED = ["AMB. 40%/50%","CRON. 70%/100%","PMI "];
-var plan_SWISS_MEDICAL_VALIDADAS = ["SUMA DE PLANES"];
-var plan_SWISS_MEDICAL_NO_VALIDADAS = ["AMB 40%","PMI 100%","AUT 100%"];
-var plan_SWISS_MEDICAL_ART = ["AMB"];
-var plan_UNIÓN_PERSONAL = ["SUMA DE PLANES","20%"];
-var plan_VICTORIA_ART = ["AMB"];
+var plan_POLICIA_FEDERAL_MES_ACTUAL = ["SELECCIONE PLAN","ACTIVOS 50%","ACTIVOS 100%","PASIVOS 50%","PASIVOS 100%","PMI"];
+var plan_POLICÍA_FEDERAL_MESES_ANTERIORES = ["SELECCIONE PLAN","ACTIVOS 50%","ACTIVOS 100%","PASIVOS 50%","PASIVOS 100%","PMI"];
+var plan_POLICIA_FEDERAL_TRAT_ESPECIALES = ["SELECCIONE PLAN","TRAT. ESPECIALES"];
+var plan_PROVINCIA_ART  = ["SELECCIONE PLAN","AMB"];
+var plan_RECETARIO_SOLIDARIO = ["SELECCIONE PLAN","VALIDADAS"];
+var plan_SIPSSA_PREPAGO = ["SELECCIONE PLAN","AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_OSPOCE = ["SELECCIONE PLAN","AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_OSPOCE_APEX = ["SELECCIONE PLAN","AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_OSCEP = ["SELECCIONE PLAN","AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_ASSP = ["SELECCIONE PLAN","AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_OSIM = ["SELECCIONE PLAN","AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_APM = ["SELECCIONE PLAN","AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_TA = ["SELECCIONE PLAN","AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SIPSSA_PLAN_37_EMPLEADOS = ["SELECCIONE PLAN","AMB 40%","AMB 50%","AUT. ESP."];
+var plan_SANCOR_SEGUROS_INTEGROS  = ["SELECCIONE PLAN","AMB"];
+var plan_SERVIRED = ["SELECCIONE PLAN","AMB. 40%/50%","CRON. 70%/100%","PMI "];
+var plan_SWISS_MEDICAL_VALIDADAS = ["SELECCIONE PLAN","SUMA DE PLANES"];
+var plan_SWISS_MEDICAL_NO_VALIDADAS = ["SELECCIONE PLAN","AMB 40%","PMI 100%","AUT 100%"];
+var plan_SWISS_MEDICAL_ART = ["SELECCIONE PLAN","AMB"];
+var plan_UNIÓN_PERSONAL = ["SELECCIONE PLAN","SUMA DE PLANES","20%"];
+var plan_VICTORIA_ART = ["SELECCIONE PLAN","AMB"];
+
 
 
 var contador = 0;
@@ -87,614 +92,245 @@ cargar_os = (param) => {
         contador++        
     }
     contador = 0;
-
-    carga_plan_dinamico = (param1) => {
-        for (i in param1) {
-            let pos_lista_plan = document.getElementById("id_planes_lista" + bandera);
-            let option = document.createElement("option");
-            pos_lista_plan.appendChild(option);
-            option.innerText = param1[i];                        
-        }
-        boton.disabled = false;
+//FUNCION CARGA PLANES
+carga_plan_dinamico = (param1) => {
+    for (i in param1) {
+        let pos_lista_plan = document.getElementById("id_planes_lista" + bandera);
+        let option = document.createElement("option");
+        pos_lista_plan.appendChild(option);
+        option.innerText = param1[i];                        
     }
-
-    
-    carga_planes_os = () => {
-        select.disabled = true;
-        let id_select = document.getElementById("select_os"+bandera);
-        let value_id_select = id_select.value;
-        let pos_lista_plan = document.getElementById("id_planes_lista"+bandera);
-
-            switch (value_id_select) {
-                case "1":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_ASOCIART);
-                    } else {
-                        carga_plan_dinamico(plan_ASOCIART);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-
-                    case "2":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_BERKLEY);
-                    } else {
-                        carga_plan_dinamico(plan_BERKLEY);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    
-                    case "3":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_ABOG);
-                    } else {
-                        carga_plan_dinamico(plan_ABOG);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "4":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_MEDICA_RIO_IV);
-                    } else {
-                        carga_plan_dinamico(plan_MEDICA_RIO_IV);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "5":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_DASUTEN);
-                    } else {
-                        carga_plan_dinamico(plan_DASUTEN);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "6":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_MEDICAMENTO_PRIMER_NIVEL);
-                    } else {
-                        carga_plan_dinamico(plan_MEDICAMENTO_PRIMER_NIVEL);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "7":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_EXPERIENCIA_ART);
-                    } else {
-                        carga_plan_dinamico(plan_EXPERIENCIA_ART);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "8":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_EXPERTA_ART);
-                    } else {
-                        carga_plan_dinamico(plan_EXPERTA_ART);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "9":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_GALENO_ART);
-                    } else {
-                        carga_plan_dinamico(plan_GALENO_ART);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "10":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_LA_SEGUNDA_ART);
-                    } else {
-                        carga_plan_dinamico(plan_LA_SEGUNDA_ART);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "11":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_LIBERTY_ART);
-                    } else {
-                        carga_plan_dinamico(plan_LIBERTY_ART);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "12":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_LIDERAR_ART);
-                    } else {
-                        carga_plan_dinamico(plan_LIDERAR_ART);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "13":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_PLUS_ART);
-                    } else {
-                        carga_plan_dinamico(plan_PLUS_ART);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "14":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OMINT_ART);
-                    } else {
-                        carga_plan_dinamico(plan_OMINT_ART);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "15":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_JERARQUICOS_SALUD);
-                    } else {
-                        carga_plan_dinamico(plan_JERARQUICOS_SALUD);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "16":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OSAPM);
-                    } else {
-                        carga_plan_dinamico(plan_OSAPM);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "17":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OSDEPYM);
-                    } else {
-                        carga_plan_dinamico(plan_OSDEPYM);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "18":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OSBA);
-                    } else {
-                        carga_plan_dinamico(plan_OSBA);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "19":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OSDIPP);
-                    } else {
-                        carga_plan_dinamico(plan_OSDIPP);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "20":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OS_PERS_DE_FCIAS);
-                    } else {
-                        carga_plan_dinamico(plan_OS_PERS_DE_FCIAS);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "21":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OS_S_FEDERACIÓN_DE_LA_CARNE);
-                    } else {
-                        carga_plan_dinamico(plan_OS_S_FEDERACIÓN_DE_LA_CARNE);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "22":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_ORG_ROCA);
-                    } else {
-                        carga_plan_dinamico(plan_ORG_ROCA);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "23":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OSIAD_ACEITEROS);
-                    } else {
-                        carga_plan_dinamico(plan_OSIAD_ACEITEROS);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "24":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OSPIC_CAUCHO);
-                    } else {
-                        carga_plan_dinamico(plan_OSPIC_CAUCHO);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "25":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OSPIT_TEXTILES);
-                    } else {
-                        carga_plan_dinamico(plan_OSPIT_TEXTILES);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "26":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OSPIP_PLÁSTICOS);
-                    } else {
-                        carga_plan_dinamico(plan_OSPIP_PLÁSTICOS);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "27":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OSMATA);
-                    } else {
-                        carga_plan_dinamico(plan_OSMATA);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "28":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OSFATLYF);
-                    } else {
-                        carga_plan_dinamico(plan_OSFATLYF);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "29":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_OSFE);
-                    } else {
-                        carga_plan_dinamico(plan_OSFE);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "30":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_PODER_JUDICIAL);
-                    } else {
-                        carga_plan_dinamico(plan_PODER_JUDICIAL);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "31":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_POLICIA_FEDERAL_MES_ACTUAL);
-                    } else {
-                        carga_plan_dinamico(plan_POLICIA_FEDERAL_MES_ACTUAL);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "32":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_POLICÍA_FEDERAL_MESES_ANTERIORES);
-                    } else {
-                        carga_plan_dinamico(plan_POLICÍA_FEDERAL_MESES_ANTERIORES);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "33":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_POLICIA_FEDERAL_TRAT_ESPECIALES);
-                    } else {
-                        carga_plan_dinamico(plan_POLICIA_FEDERAL_TRAT_ESPECIALES);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "34":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_PROVINCIA_ART);
-                    } else {
-                        carga_plan_dinamico(plan_PROVINCIA_ART);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "35":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_RECETARIO_SOLIDARIO);
-                    } else {
-                        carga_plan_dinamico(plan_RECETARIO_SOLIDARIO);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "36":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SIPSSA_PREPAGO);
-                    } else {
-                        carga_plan_dinamico(plan_SIPSSA_PREPAGO);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "37":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SIPSSA_OSPOCE);
-                    } else {
-                        carga_plan_dinamico(plan_SIPSSA_OSPOCE);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "38":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SIPSSA_OSPOCE_APEX);
-                    } else {
-                        carga_plan_dinamico(plan_SIPSSA_OSPOCE_APEX);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "39":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SIPSSA_OSCEP);
-                    } else {
-                        carga_plan_dinamico(plan_SIPSSA_OSCEP);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "40":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SIPSSA_ASSP);
-                    } else {
-                        carga_plan_dinamico(plan_SIPSSA_ASSP);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "41":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SIPSSA_OSIM);
-                    } else {
-                        carga_plan_dinamico(plan_SIPSSA_OSIM);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-
-                    case "42":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SIPSSA_APM);
-                    } else {
-                        carga_plan_dinamico(plan_SIPSSA_APM);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "43":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SIPSSA_TA);
-                    } else {
-                        carga_plan_dinamico(plan_SIPSSA_TA);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "44":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SIPSSA_PLAN_37_EMPLEADOS);
-                    } else {
-                        carga_plan_dinamico(plan_SIPSSA_PLAN_37_EMPLEADOS);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "45":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SANCOR_SEGUROS_INTEGROS);
-                    } else {
-                        carga_plan_dinamico(plan_SANCOR_SEGUROS_INTEGROS);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "46":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SERVIRED);
-                    } else {
-                        carga_plan_dinamico(plan_SERVIRED);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "47":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SWISS_MEDICAL_VALIDADAS);
-                    } else {
-                        carga_plan_dinamico(plan_SWISS_MEDICAL_VALIDADAS);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "48":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SWISS_MEDICAL_NO_VALIDADAS);
-                    } else {
-                        carga_plan_dinamico(plan_SWISS_MEDICAL_NO_VALIDADAS);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "49":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_SWISS_MEDICAL_ART);
-                    } else {
-                        carga_plan_dinamico(plan_SWISS_MEDICAL_ART);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "50":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_UNIÓN_PERSONAL);
-                    } else {
-                        carga_plan_dinamico(plan_UNIÓN_PERSONAL);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
-                    case "51":                       
-                    if (pos_lista_plan.hasChildNodes()) {
-                        while (pos_lista_plan.firstChild) {
-                            pos_lista_plan.removeChild(pos_lista_plan.firstChild);    
-                        }
-                        carga_plan_dinamico(plan_VICTORIA_ART);
-                    } else {
-                        carga_plan_dinamico(plan_VICTORIA_ART);
-                        pos_lista_plan.disabled = false;
-                    }                    
-                    break;
+    boton.disabled = false;
+}
 
 
-                    default:
-                        break;
-            }
+//FUNCION QUE CONTEMPLA LA CARGA DE PLANES INCLUYENDO LO DINAMICO    
+carga_planes_os = () => {
+    select.disabled = true;
+    let id_select = document.getElementById("select_os"+bandera);
+    let value_id_select = id_select.value;
+    let pos_lista_plan = document.getElementById("id_planes_lista"+bandera);
+        switch (value_id_select) {
+            case "1":                       
+                    carga_plan_dinamico(plan_ASOCIART);
+                    pos_lista_plan.disabled = false; 
+                    return value_id_select;     
+            case "2":                       
+                carga_plan_dinamico(plan_BERKLEY);
+                pos_lista_plan.disabled = false;                   
+                break;
                 
+            case "3":                       
+                carga_plan_dinamico(plan_ABOG);
+                pos_lista_plan.disabled = false;                   
+                break;
+            case "4":                     
+                carga_plan_dinamico(plan_MEDICA_RIO_IV);
+                pos_lista_plan.disabled = false;                
+                break;
+            case "5":                       
+                carga_plan_dinamico(plan_DASUTEN);
+                pos_lista_plan.disabled = false;                 
+                break;
+            case "6":                       
+                carga_plan_dinamico(plan_MEDICAMENTO_PRIMER_NIVEL);
+                pos_lista_plan.disabled = false;                  
+                break;
+            case "7":                       
+                carga_plan_dinamico(plan_EXPERIENCIA_ART);
+                pos_lista_plan.disabled = false;                 
+                break;
+            case "8":                       
+                carga_plan_dinamico(plan_EXPERTA_ART);
+                pos_lista_plan.disabled = false;
+                break;
+            case "9":                       
+                carga_plan_dinamico(plan_GALENO_ART);
+                pos_lista_plan.disabled = false;                  
+                break;
+            case "10":                       
+                    carga_plan_dinamico(plan_LA_SEGUNDA_ART);
+                    pos_lista_plan.disabled = false;                   
+                break;
+            case "11":                       
+                    carga_plan_dinamico(plan_LIBERTY_ART);
+                    pos_lista_plan.disabled = false;                  
+                break;
+            case "12":                       
+                    carga_plan_dinamico(plan_LIDERAR_ART);
+                    pos_lista_plan.disabled = false;                   
+                break;
+            case "13":                       
+                    carga_plan_dinamico(plan_PLUS_ART);
+                    pos_lista_plan.disabled = false;              
+                break;
+            case "14":                       
+                    carga_plan_dinamico(plan_OMINT_ART);
+                    pos_lista_plan.disabled = false;                  
+                break;
+            case "15":                       
+                    carga_plan_dinamico(plan_JERARQUICOS_SALUD);
+                    pos_lista_plan.disabled = false;             
+                break;
+            case "16":                       
+                    carga_plan_dinamico(plan_OSAPM);
+                    pos_lista_plan.disabled = false;                    
+                break;
+            case "17":                       
+                    carga_plan_dinamico(plan_OSDEPYM);
+                    pos_lista_plan.disabled = false;                 
+                break;
+            case "18":                       
+                    carga_plan_dinamico(plan_OSBA);
+                    pos_lista_plan.disabled = false;
+                break;
+            case "19":                       
+                    carga_plan_dinamico(plan_OSDIPP);
+                    pos_lista_plan.disabled = false;        
+                break;
+            case "20":                       
+                    carga_plan_dinamico(plan_OS_PERS_DE_FCIAS);
+                    pos_lista_plan.disabled = false;             
+                break;
+            case "21":                       
+                    carga_plan_dinamico(plan_OS_S_FEDERACIÓN_DE_LA_CARNE);
+                    pos_lista_plan.disabled = false;          
+                break;
+            case "22":                       
+                    carga_plan_dinamico(plan_ORG_ROCA);
+                    pos_lista_plan.disabled = false;            
+                break;
+            case "23":                       
+                    carga_plan_dinamico(plan_OSIAD_ACEITEROS);
+                    pos_lista_plan.disabled = false;       
+                break;
+            case "24":                       
+                    carga_plan_dinamico(plan_OSPIC_CAUCHO);
+                    pos_lista_plan.disabled = false;                
+                break;
+            case "25":                       
+                    carga_plan_dinamico(plan_OSPIT_TEXTILES);
+                    pos_lista_plan.disabled = false;               
+                break;
+            case "26":                       
+                    carga_plan_dinamico(plan_OSPIP_PLÁSTICOS);
+                    pos_lista_plan.disabled = false;               
+                break;
+            case "27":                       
+                    carga_plan_dinamico(plan_OSMATA);
+                    pos_lista_plan.disabled = false;                
+                break;
+            case "28":                       
+                    carga_plan_dinamico(plan_OSFATLYF);
+                    pos_lista_plan.disabled = false;                
+                break;
+            case "29":                       
+                    carga_plan_dinamico(plan_OSFE);
+                    pos_lista_plan.disabled = false;              
+                break;
+            case "30":                       
+                    carga_plan_dinamico(plan_PODER_JUDICIAL);
+                    pos_lista_plan.disabled = false;                
+                break;
+            case "31":                       
+                    carga_plan_dinamico(plan_POLICIA_FEDERAL_MES_ACTUAL);
+                    pos_lista_plan.disabled = false;             
+                break;
+            case "32":                       
+                    carga_plan_dinamico(plan_POLICÍA_FEDERAL_MESES_ANTERIORES);
+                    pos_lista_plan.disabled = false;             
+                break;
+            case "33":                       
+                    carga_plan_dinamico(plan_POLICIA_FEDERAL_TRAT_ESPECIALES);
+                    pos_lista_plan.disabled = false;                 
+                break;
+            case "34":                       
+                    carga_plan_dinamico(plan_PROVINCIA_ART);
+                    pos_lista_plan.disabled = false;                 
+                break;
+            case "35":                       
+                    carga_plan_dinamico(plan_RECETARIO_SOLIDARIO);
+                    pos_lista_plan.disabled = false;            
+                break;
+            case "36":                       
+                    carga_plan_dinamico(plan_SIPSSA_PREPAGO);
+                    pos_lista_plan.disabled = false;           
+                break;
+            case "37":                       
+                    carga_plan_dinamico(plan_SIPSSA_OSPOCE);
+                    pos_lista_plan.disabled = false;               
+                break;
+            case "38":                       
+                    carga_plan_dinamico(plan_SIPSSA_OSPOCE_APEX);
+                    pos_lista_plan.disabled = false;                 
+                break;
+            case "39":                       
+                    carga_plan_dinamico(plan_SIPSSA_OSCEP);
+                    pos_lista_plan.disabled = false;               
+                break;
+            case "40":                       
+                    carga_plan_dinamico(plan_SIPSSA_ASSP);
+                    pos_lista_plan.disabled = false;             
+            break;
+            case "41": 
+                    carga_plan_dinamico(plan_SIPSSA_OSIM);
+                    pos_lista_plan.disabled = false;                
+                break;
+            case "42":                       
+                    carga_plan_dinamico(plan_SIPSSA_APM);
+                    pos_lista_plan.disabled = false;               
+                break;
+            case "43":                       
+                    carga_plan_dinamico(plan_SIPSSA_TA);
+                    pos_lista_plan.disabled = false;                 
+                break;
+            case "44":                       
+                    carga_plan_dinamico(plan_SIPSSA_PLAN_37_EMPLEADOS);
+                    pos_lista_plan.disabled = false;                  
+                break;
+            case "45":                       
+                    carga_plan_dinamico(plan_SANCOR_SEGUROS_INTEGROS);
+                    pos_lista_plan.disabled = false;                
+                break;
+            case "46":                       
+                    carga_plan_dinamico(plan_SERVIRED);
+                    pos_lista_plan.disabled = false;               
+                break;
+            case "47":                       
+                    carga_plan_dinamico(plan_SWISS_MEDICAL_VALIDADAS);
+                    pos_lista_plan.disabled = false;                
+                break;
+            case "48":                       
+                    carga_plan_dinamico(plan_SWISS_MEDICAL_NO_VALIDADAS);
+                    pos_lista_plan.disabled = false;                 
+                break;
+            case "49":                       
+                    carga_plan_dinamico(plan_SWISS_MEDICAL_ART);
+                    pos_lista_plan.disabled = false;                 
+                break;
+            case "50":                       
+                    carga_plan_dinamico(plan_UNIÓN_PERSONAL);
+                    pos_lista_plan.disabled = false;               
+                break;
+            case "51":                       
+                    carga_plan_dinamico(plan_VICTORIA_ART);
+                    pos_lista_plan.disabled = false;             
+                break;
+                default:
+                    break;
+        }  
     }
 }
+//console.log(value_id_select)
 
-/*
-elimina_nodos = (param1,param2) => {
-    let hijos = document.getElementById(param1);
-    let padre = document.getElementById(param2);
-    padre.removeChild(hijos);
-
-}
-*/
-
+//BORRA LAS FILAS
 deleteRow = (btn) => {
     var row = btn.parentNode.parentNode;
     row.parentNode.removeChild(row);
     boton.disabled = false;
 }
 
-
+//OCULTA LOS BOTONES CUANDO SE VA A IMPRIMIR
 ocultar = () =>{
     const buttons = document.getElementsByTagName("button");
     for (let i = 0; i < buttons.length; i++) {
@@ -706,3 +342,46 @@ ocultar = () =>{
     }
 }
 
+//FUNCION QUE CARGA LOS CODIGOS DE LOS PLANES EN LA PRIMER COLUMNA
+
+carga_cod_planes = () => {
+    let codigo = document.getElementById("codigo_plan" + bandera);
+    let id_select = document.getElementById("select_os"+bandera).value;
+    let codigo_plan = document.getElementById("id_planes_lista" + bandera);
+    var selected = codigo_plan.options[codigo_plan.selectedIndex].text;
+
+    //AGREGAR IF SEGUN EL SELECT DE LA OS Y EL PLAN Q ELEIGIO
+
+        switch (id_select) {
+            case "1":
+                if (selected == "AMB.") {
+                    codigo.value = "115"
+                    codigo.disabled = true;
+                }
+                break;
+            case "2":
+                if (selected == "AMB.") {
+                    codigo.value = "22"
+                }
+                codigo.disabled = true;
+                break;
+            case "3":
+                if (selected == "AMB.") {
+                    codigo.value = "18"
+                }
+                codigo.disabled = true;
+                if (selected == "PMI. 100%") {
+                    codigo.value = "218"
+                }
+                codigo.disabled = true;
+                if (selected == "ESPECIALES") {
+                    codigo.value = "518"
+                }
+                codigo.disabled = true;
+                break;
+            
+            default:
+                break;
+        }
+    codigo_plan.disabled = true;
+}
